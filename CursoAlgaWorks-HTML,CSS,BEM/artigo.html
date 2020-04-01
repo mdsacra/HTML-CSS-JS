@@ -1,0 +1,69 @@
+<!-- 1) abrir e fechar <TAGS> é diferente de abrir e fechar <ELEMENTOS></ELEMENTOS>
+     2) 'src' significa 'SOURCE' (PT=Origem) -->
+<!DOCTYPE html> 
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title>CursoAlgaWorks</title>
+
+        <!--
+            Exemplos de estilo "incorporado"
+        <style>
+            h1 {
+                color:firebrick;
+            }
+            p {
+                color:goldenrod;
+                font-family: 'Courier New';
+            }
+
+            strong {
+                color:forestgreen;
+            }
+
+        </style>
+        -->
+        <!--Exemplo de estilo por link externo-->
+        <link rel="stylesheet" href="estilo.css">
+
+    </head>
+    <body>
+        <header>
+            <!--
+                Exemplo de estilo "inline"
+            <p style = "color:darkorange">Site do Matheus</p>
+            -->
+            
+            <p>Site do Matheus</p>
+        
+        </header>
+
+        <article>
+            <header>
+                <div id="titulo">
+                    <h1>Oi pessoal!</h1>
+                </div>
+
+                <a href="http://www.facebook.com/mdsacra" target="_blank">
+                    <img src="fotosite.png" width="200" height="200" alt="Caradodesenvolvedor">
+                </a>
+            </header>
+
+            <p id="intro">Estou começando a estudar <mark>HTML</mark>, quero entender como funciona.
+            Já até vi algumas aulas de outro curso mas não era bem explicado. <br> <em>Agora está bem mais claro</em> com estas explicações.</p>
+            
+            <h2 class="obj">Objetivos</h2>
+            
+            <p>Isso servirá para eu conseguir, em breve, um emprego na área. <br>Quero começar com Front-End. <strong class="obj">Tenho pouco mais de dois meses</strong> para aprender bem estas informações e poder me candidatar a vagas ou tentar alguns trabalhos como freelancer.</p>
+        
+        </article>
+
+        <aside>
+            <p>Anúncios da Página</p>
+        </aside>
+
+        <footer>
+            <p>Todos os direitos reservados. 2020.</p>
+        </footer>
+    </body>
+</html>
