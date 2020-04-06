@@ -1,0 +1,110 @@
+/*CSS: Cascate Style Sheets (Folhas de Estílo em Cascata)*/
+/* O "*" é um seletor que pega todos os elementos da sua página. */
+
+header p {
+/* Sugestões de Organização*/
+/* POSICIONAMENTO */
+
+
+/* DISPLAY E BOX MODEL */
+    margin: 0 auto;    
+    display: block;
+    width: 200px;
+    height: 30px;
+    border: thick #ff6000 dotted; /* Atalho para "width", "color" e "style" */
+    border-radius: 30px 0;
+
+/* CORES */
+    background-color: #808080;
+    color: #ff6000;
+
+/* TEXTOS */
+    font-family: "Comic Sans", "Verdana", sans-serif;
+    text-align: center;
+    
+/* OUTROS */
+    
+
+
+}
+
+div#titulo {
+    
+    width: 400px;
+    background-color: #808080;
+    color:#802020;
+
+/* Sempre termine com uma fonte genérica, pra não haver problema do PC não encontrar.
+        font-family: "Trebuchet MS", sans-serif;
+        font-size: 32px;
+        font-style: italic;
+        font-weight: bold;  */
+    
+/* Forma resumida */
+    font: italic bold 24px "Trebuchet MS", sans-serif;
+    
+    text-decoration: underline;
+    text-align: center; /* Alinha o texto com base no bloco pai, no caso aqui, div#titulo. */
+    padding: 1em;
+    margin: 5px 0;
+
+        
+    }
+
+h1 {
+    margin: 0;
+}
+
+
+
+p#intro {
+    color: blue;
+    float: left;
+    width: 49%;
+
+}
+p#intro::first-letter {
+    font-size: 48px;            /*Chamamos o parâmetro "::" de PSEUDO-ELEMENTO */
+    font-weight: bold;
+}
+
+p {
+    color: red;
+}
+
+.objetivos > .obj {
+    color: darkolivegreen;
+}
+
+.obj::after {
+    content: " - entenda!"
+}
+
+.objetivos {
+    float: right;
+    width: 49%;
+}
+
+article::after { /* Esta função servirá para limpar o "float" que colocamos anteriormente */
+    content: "";
+    display: block;
+    clear: both; 
+
+}
+.clearfix {
+    clear: both;
+
+}
+
+footer p{
+    display: block;
+    width: 200px;
+    height: 50px;
+    
+    background-color: #303030;
+    
+    text-align: center;
+    color: #ff6000;
+
+    margin: 10px auto;
+}
