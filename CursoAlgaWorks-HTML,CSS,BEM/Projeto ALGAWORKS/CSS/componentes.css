@@ -77,6 +77,8 @@
     text-decoration: none;
     font-size: 1em;
 
+    line-height: normal;
+
 }
 
 .botao:hover, .botao:focus {  /* "hover" e "focus" são PSEUDO-CLASSES, não confundir com PSEUDO-ELEMENTOS */
@@ -86,11 +88,12 @@
     text-decoration: none;
 }
 
-.botao--contratar {
+.botao--contratar, .botao--login {
     background-color: #127d00;
 }
 
-.botao--contratar {
+.botao--contratar:hover, .botao--contratar:focus,
+.botao--login:hover, .botao--login:focus  {
     background-color: #0e6400;
 
 }
@@ -210,6 +213,7 @@
     background-image: url("../imagens/bars.png");
     border: 0;
 
+    vertical-align: middle;
     outline: none;
 
 }
@@ -218,4 +222,56 @@
     .botao-chaveador {
         display: none;
     }
+}
+
+
+.menu {
+    margin: 0;
+    
+    font-size: 1em;
+    
+    list-style: none;
+}
+
+@media (max-width:991px) {
+
+    .menu {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        padding: 20px;
+        display: none;
+        
+        width: 200px;
+        border-right: 1px solid #eee;
+        background-color: #fbfbfb;
+        
+    }
+    
+    .menu--exibindo {
+        display: block;
+    }
+
+    .menu__item {
+        display: block;
+        line-height: 3;
+    }
+
+    .menu__item--botao {
+        margin-top: 20px;
+    }
+
+}
+
+@media (min-width: 992px) {
+   .menu__item {
+       display: inline-block;
+       padding-right: 20px;
+   }
+
+   .menu__item:last-of-type {
+       padding-right: 0;
+   }
+
 }
