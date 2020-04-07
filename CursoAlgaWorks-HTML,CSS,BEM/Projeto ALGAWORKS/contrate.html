@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Contrate - M. Áudio</title>
+
+        <!-- <link rel="stylesheet" href="CSS/normalize.css"> >>> "Normalize.css" - arquivo de configurações padrões que funcionam em todos os navegadores! -->
+        <link rel="stylesheet" href="CSS/bootstrap-grid.min.css">
+        <link rel="stylesheet" href="CSS/base.css">
+        <link rel="stylesheet" href="CSS/layout.css">
+        <link rel="stylesheet" href="CSS/componentes.css">
+
+    </head>
+    
+    <body>
+        <header class="layout-cabecalho  layout-cabecalho--home">
+            <div class="container">
+                <nav class="navegacao  navegacao--contrate">
+                    <a href="index.html"><img src="imagens/emeponto.png" width="40px" height="40px" alt="M. Áudio" ></a>
+                </nav>
+            </div>
+        </header> 
+
+        <main class="layout-contrate">
+            <div class="container">
+                <form action="#" method="post">
+                    <h1 class="titulo-formulario">Nos conte o que precisa</h1>
+
+                    <div class="grupo-entrada">
+                        <label for="razao-social">Razão Social</label>
+                        <input type="text" id="razao-social" class="campo" required>
+                    </div>
+                    
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="grupo-entrada">
+                            <label for="cnpj">CNPJ</label>
+                            <input type="text" id="cnpj" class="campo" required>
+                        </div>
+                    </div>
+                
+                    <div class="col-sm-3"> 
+                        <div class="grupo-entrada">
+                            <label for="data-fundacao">Data de Fundação</label>
+                            <input type="date" id="data-fundacao" class="campo" required>
+                        </div>
+                    </div>
+                </div>                    
+
+                    <div class="grupo-entrada">
+                        <label for="responsavel">Responsável</label>
+                        <input type="text" id="responsavel" class="campo" required>
+                    </div>
+
+                    <div class="grupo-entrada">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" class="campo" required>
+                    </div>
+                
+                <div class="row">
+                    <div class="col-sm-3">    
+                        <div class="grupo-entrada">
+                            <label for="estado">Estado</label>
+                            <select name="estado" id="estado" class="campo" required>
+                                <option>Selecione</option>
+                                <option value="RS">Rio Grande do Sul</option>
+                                <option value="SC">Santa Catarina</option>
+                                <option value="PR">Paraná</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="grupo-entrada">
+                            <label for="cidade">Cidade</label>
+                            <select name="cidade" id="cidade" class="campo" required>
+                                <option>Selecione</option>
+                                <option value="1">Porto Alegre</option>
+                                <option value="2">Florianópolis</option>
+                                <option value="3">Curitiba</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="grupo-entrada">
+                            <label for="senha">Senha</label>
+                            <input type="password" id="senha" class="campo" required>
+                        </div>
+                    </div>
+                    
+                    <div class="col-sm-3">
+                        <div class="grupo-entrada">
+                            <label for="confirma-senha">Confirme a Senha</label>
+                            <input type="password" id="confirma-senha" class="campo" required>
+                        </div>
+                    </div>
+                </div>
+
+                    <div style="text-align: center; margin-top: 40px">
+                        <input type="submit" value="Enviar Proposta" class="botao botao--principal">
+                    </div>
+                </form>
+
+
+            </div>
+        </main>
+
+        <footer class="layout-rodape">
+            <div class="container">
+                <p>&copy; M. Áudio. Todos os direitos reservados.</p>
+            </div>
+
+        </footer>
+
+    </body>
+
+</html>

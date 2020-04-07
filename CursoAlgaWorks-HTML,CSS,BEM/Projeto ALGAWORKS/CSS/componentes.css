@@ -100,7 +100,7 @@
 
 .botao--principal {
     border-radius: 10px;
-
+    border: none;
     background-color: #004b86;
 
 }
@@ -197,10 +197,6 @@
     margin-top: 10px;
 }
 
-.navegacao {
-
-}
-
 .navegacao__menu {
     float: right;
 }
@@ -274,4 +270,46 @@
        padding-right: 0;
    }
 
+}
+
+.navegacao--contrate {
+    text-align: center;
+    position: initial;
+}
+
+.titulo-formulario {
+    margin: 0;
+    margin-bottom: 40px;
+
+    border-bottom: 1px solid #ccc;
+
+    font-size: 2.6rem;
+    font-weight: normal;
+    color: #004b86;
+
+
+}
+
+.grupo-entrada {
+    margin-bottom: 15px;
+    
+}
+
+.grupo-entrada > label {
+    display: block;
+    font-weight: bold;
+
+}
+
+.campo {
+    display: block;
+    width: 100%;
+    height: 2.8em;
+
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+
+    background-color: #fff;
+    font-size: 1.4rem;
 }
