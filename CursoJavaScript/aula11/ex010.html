@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bem-Vindo</title>
+</head>
+
+<body>
+    <h2>Em que país você nasceu?</h2>
+    <input type="text" id="pais">
+    <input style="background-color: green; color: white" type="button" value="Confirma" onclick="onde()">
+    <div id="res"></div>
+    <script>
+        
+        function onde() {
+            var paisinput = window.document.querySelector('input#pais')
+            var pais = paisinput.value.toUpperCase()
+            var res = window.document.querySelector('div#res')
+            res.innerHTML = `<p>Seu país de nascimento é <strong>${pais}</strong>.</p>`
+            if (pais != 'BRASIL') {
+                res.innerHTML += `<p>Você é <strong>ESTRANGEIRx</strong>!</p>`
+            }
+            else {
+                res.innerHTML += '<p>Você é <strong>BRASILEIRx</strong>!</p>'
+            }
+        }
+
+    </script>
+</body>
+</html>

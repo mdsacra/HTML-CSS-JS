@@ -1,0 +1,62 @@
+CURSO EM VÍDEO
+
+#Aula 07 - Operadores (parte 1)
+
+    Tipos de Operadores
+    - Aritméticos
+        + - * / % **
+        Incremento
+            Pós
+                n = 10
+                n++
+                n = 11
+            Pré
+                n = 10
+                ++n == 11
+                
+    - Atribuição
+        n = n + 5 => Resumido => n += 5
+        Incremento
+                Pós
+                    n = 10
+                    n++
+                    n = 11
+                Pré
+                    n = 10
+                    ++n == 11
+
+#Aula 08 - Operadores (parte 2)
+
+    - Relacionais
+    > < >= <= == != 
+    "===" este é um operador de Identidade, testa se os valores são idênticos (mesmo valor e mesmo tipo)
+    
+    - Lógicos
+    ! => Negação "Não"
+    && => Conjunção "E"
+    || => Disjunção "Ou"
+    
+    - Ternário
+    ? :
+    Ex.: " média >= 7.0 ? 'Aprovado' : 'Reprovado' "
+
+    
+    Primeiro faço os operadores Aritméticos, depois os Relacionais e depois os Lógicos. Entre os operadores Lógicos, a ordem é 'NÃO', 'E' e 'OU'.
+
+
+#Aula 09 - DOM (Document Object Model)
+    Árvore DOM
+        Entender a hierarquia dentro do seu documento
+    
+    Métodos de Acesso dos "filhos" (childs, seriam os galhos) dentro da Árvore (lembrar que "window" e "document" são outros "parents" da árvore)
+        - Marca
+            window.document.getElementsbyTagName
+        - Id
+            window.document.getElementbyId
+        - Nome
+            window.document.getElementbyName
+        - Classe
+            widow.document.getElementbyClassName
+        - Seletor
+            querySelector
+            querySelectorAll
