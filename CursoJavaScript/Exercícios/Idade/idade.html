@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de Idade</title>
+    <link rel="stylesheet" href="style-idade.css">
+    
+</head>
+
+<body>
+    <header>
+        <h1>Verificador de Idade</h1>
+    </header>
+
+    <section id="quadro">
+        <div>
+            <p>Ano de Nascimento:
+                <input type="number" name="txtano" id="txtano" min="1900" max="2020">
+            </p>
+            <p>Sexo: 
+                <input type="radio" name="radsex" id="mas" checked>
+                <label for="mas">Masculino</label>
+                <input type="radio" name="radsex" id="fem">
+                <label for="fem">Feminino</label>
+            </p>
+            <p>
+                <input id="botao" type="button" value="Verificar" onclick="verificar()">
+            </p>
+            
+        </div>
+
+        <div id="res">
+            Preencha os dados acima para ver o resultado!
+        </div>
+
+        <!-- Deu certo deste jeito
+            <img src="#" alt="retrato" id="retrato" width="220" style="display:none"> -->
+
+    </section>
+    <footer>
+        <p>Matheus Sacramento &REG;</p>
+    </footer>
+
+    <script src="js-idade.js"></script>
+    
+</body>
+</html>

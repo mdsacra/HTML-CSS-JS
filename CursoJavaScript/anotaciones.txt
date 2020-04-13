@@ -60,3 +60,4 @@ CURSO EM VÍDEO
         - Seletor
             querySelector
             querySelectorAll
+
