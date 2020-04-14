@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analisador de Números</title>
+    <link rel="stylesheet" href="style-analisador.css">
+    
+</head>
+
+<body>
+    <header>
+        <h1>Analisador de Números</h1>
+    </header>
+
+    <section>
+        <div>
+            <label for="numero">Adicione um número (de 1 a 100): </label>
+            <input type="number" name="numero" id="numero">
+            <input type="button" value="Adicionar" onclick="adicionar()">
+        </div>
+        <div>
+            <select name="slct" id="slct" style="margin-top:15px; width: 200px" size="10">
+                
+            </select>
+        </div>
+        <div>
+            <input type="button" value="Analisar" onclick="analisar()" style="margin-top:15px">
+        </div>
+
+        <div id="res" style="line-height: 2em;">
+            
+        </div>
+     
+    </section>
+    <footer>
+        <p>Matheus Sacramento &REG;</p>
+    </footer>
+
+    <script src="js-analisador.js"></script>
+    
+</body>
+</html>

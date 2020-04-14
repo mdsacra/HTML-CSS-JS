@@ -61,3 +61,10 @@ CURSO EM VÍDEO
             querySelector
             querySelectorAll
 
+#Aula 16 - Funções
+    As funções tem:
+        - Chamada
+        - Parâmetro
+        - Ação 
+        - Retorno
+    Nem todas tem Parâmetro ou Retorno.
